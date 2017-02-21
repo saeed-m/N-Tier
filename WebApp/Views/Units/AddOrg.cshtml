@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "AddOrg";
+}
+
+
+@using (Html.BeginForm("AddOrg", "Units", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+            <span><i class="fa fa-edit"></i>افزودن واحد جدید</span>
+
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="Name">نام واحد</label>
+                <input type="text" class="form-control" name="Name" id="Name">
+                <label for="Desc">توضیحات</label>
+                <input type="text" class="form-control" name="Desc" id="Desc">
+
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button type="submit" class="btn btn-success"><i class="fa fa-save"></i>&nbsp;ثبت اطلاعات</button>
+           <a href="@Url.Action("Index", "Units")" class="btn btn-warning"><i class="fa fa-arrow-right"></i>&nbsp;بازگشت به لیست واحد ها</a>
+        </div>
+
+
+    </div>
+}
+

@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>N-Tire Application</title>
+    <link rel="icon" type="image/ico" href="#" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ============ Stylesheets ============= -->
+    <link href="~/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/assets/css/CssFramework.css" rel="stylesheet" />
+    <link href="~/assets/css/Main.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <!-- ======Heder ====== -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+            <a href="#menu-toggle" class="fa fa-bars fa-2x pull-right" id="menu-toggle"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav"></ul>
+
+            <ul class="nav navbar-nav navbar-left">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i> کاربر سایت <span class="caret"></span>
+
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-user pull-left"></i>پروفایل</a></li>
+                        <li><a href="#"><i class="fa fa-cog pull-left"></i>تنظیمات</a></li>
+                        <li><a href="#"><i class="fa fa-lock pull-left"></i>تغییر رمز عبور</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><i class="fa fa-sign-out pull-left"></i>خروج</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge alertbadge bg-lightred">5</span><i class="fa fa-bell"></i> <span class="caret"></span>
+
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">آمارهای رسیده</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">واحد شماره یک</a></li>
+                        <li><a href="#">واحد شماره دو</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge alertbadge bg-lightred">3</span><i class="fa fa-envelope"></i> <span class="caret"></span>
+
+                    </a>
+
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group ">
+                    <input type="text" class="form-control" placeholder="به دنبال ماژولی هستید؟">
+                </div>
+                <button type="submit" class="btn btn-default">جستجو</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+    <!--Side Bar start-->
+    <div id="wrapper">
+        <div class="col-md-4">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            SM CMS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin/index"><i class="fa fa-home"></i>&nbsp;داشبورد </a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i>&nbsp;ایمیل ها</a>
+                        <ul class="submenu">
+                            <li><a href="#"><i class="fa fa-reply"></i>&nbsp;رسیده ها</a></li>
+                            <li><a href="#"><i class="fa fa-send"></i>&nbsp;ارسال شده ها</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>&nbsp;رسیده ها</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/units/index"><i class="fa fa-cogs"></i>&nbsp;واحد ها</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bolt"></i>&nbsp;رویدادهای سیستم</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-image"></i>&nbsp;اسلایدرها</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users"></i>&nbsp;کاربران</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-user-secret"></i>&nbsp;نقش های امنیتی</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+
+        <div id="page-content-wrapper">
+            @{Html.RenderPartial("_BreadCrumb");}
+            @*<ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">داشبورد</a></li>
+                <li class="breadcrumb-item active">درباره ما</li>
+            </ol>*@
+            
+            @RenderBody()
+
+
+
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+
+    <!--SideBar End-->
+
+
+
+
+
+    <!-- =============== Scripts ================= -->
+    <script src="/assets/Scripts/JQuery/jquery-1.9.1.min.js"></script>
+    <!--For debug mode-->
+    <script src="/assets/Scripts/JQuery/jquery-1.9.1.intellisense.js"></script>
+   <script src="/assets/Scripts/bootstrap/bootstrap.min.js"></script>
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

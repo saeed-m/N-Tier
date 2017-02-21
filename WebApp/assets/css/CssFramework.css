@@ -1,0 +1,261 @@
+﻿.rtl {
+    direction: rtl!important;
+    text-align: right!important;
+}
+
+/*Margin Top*/
+.mt-5 {
+    margin-top: 5px !important;
+    
+}
+.mt-10 {
+    margin-top: 10px !important;
+    
+}
+.mt-15 {
+    margin-top: 15px !important;
+    
+}
+.mt-20 {
+    margin-top: 20px !important;
+    
+}
+.mt-25 {
+    margin-top: 25px !important;
+    
+}
+.mt-30 {
+    margin-top: 30px !important;
+    
+}
+.mt-35 {
+    margin-top: 35px !important;
+    
+}
+.mt-40 {
+    margin-top: 40px !important;
+    
+}
+.mt-45 {
+    margin-top: 45px !important;
+    
+}
+.mt-50 {
+    margin-top: 50px !important;
+    
+}
+.mt-100 {
+    margin-top: 100px !important;
+    
+}
+
+/*Margin button*/
+.mb-5 {
+    margin-bottom: 5px !important;
+    
+}
+.mb-10 {
+    margin-bottom: 10px !important;
+    
+}
+.mb-15 {
+    margin-bottom: 15px !important;
+    
+}
+.mb-20 {
+    margin-bottom: 20px !important;
+    
+}
+.mb-25 {
+    margin-bottom: 25px !important;
+    
+}
+.mb-30 {
+    margin-bottom: 30px !important;
+    
+}
+.mb-35 {
+    margin-bottom: 35px !important;
+    
+}
+.mb-40 {
+    margin-bottom: 40px !important;
+    
+}
+.mb-45 {
+    margin-bottom: 45px !important;
+    
+}
+.mb-50 {
+    margin-bottom: 50px !important;
+    
+}
+.mb-100 {
+    margin-bottom: 100px !important;
+    
+}
+/*padding Top*/
+.pt-5 {
+   padding-top: 5px !important;
+    
+}
+.pt-10 {
+   padding-top: 10px !important;
+    
+}
+.pt-15 {
+   padding-top: 15px !important;
+    
+}
+.pt-20 {
+   padding-top: 20px !important;
+    
+}
+.pt-25 {
+   padding-top: 25px !important;
+    
+}
+.pt-30 {
+   padding-top: 30px !important;
+    
+}
+.pt-35 {
+   padding-top: 35px !important;
+    
+}
+.pt-40 {
+   padding-top: 40px !important;
+    
+}
+.pt-45 {
+   padding-top: 45px !important;
+    
+}
+.pt-50 {
+   padding-top: 50px !important;
+    
+}
+.pt-100 {
+   padding-top: 100px !important;
+    
+}
+/*padding btn*/
+.pb-5 {
+   padding-bottom: 5px !important;
+    
+}
+.pb-10 {
+   padding-bottom: 10px !important;
+    
+}
+.pb-15 {
+   padding-bottom: 15px !important;
+    
+}
+.pb-20 {
+   padding-bottom: 20px !important;
+    
+}
+.pb-25 {
+   padding-bottom: 25px !important;
+    
+}
+.pb-30 {
+   padding-bottom: 30px !important;
+    
+}
+.pb-35 {
+   padding-bottom: 35px !important;
+    
+}
+.pb-40 {
+   padding-bottom: 40px !important;
+    
+}
+.pb-45 {
+   padding-bottom: 45px !important;
+    
+}
+.pb-50 {
+   padding-bottom: 50px !important;
+    
+}
+.pb-100 {
+   padding-bottom: 100px !important;
+    
+}
+
+.bg-blue {
+    background-color: #2FBBE8!important;
+
+}
+.size-30x30 {
+    height: 30px;
+    width: 30px;
+}
+.size-150 {
+   
+    width: 150px;
+}
+
+/*===============Costomaize Navabr--------------------*/
+/* navbar */
+.navbar-default {
+    background-color: #00A3D8;
+    border:none!important;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #FFF;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #FFF;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+.bg-lightred {
+    background-color: #e05d6f !important;
+    color: white !important;
+}
+#menu-toggle {
+    color: #fff;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-right: 10px;
+    
+}

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<DomainClasses.Entities.Organization>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="alert alert-info alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    لیست واحد های ثبت شده در سیستم
+</div>
+
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered">
+        <caption><a href="@Url.Action("AddOrg","Units")" class="btn btn-success pull-right mb-10"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;افزودن واحد جدید</a></caption>
+        <thead>
+        
+        <tr>
+            <th>#</th>
+            <th>نام واحد</th>
+            <th> توضیحات</th>
+            <th>اختیارات</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+        @{
+            foreach (var Organization in Model)
+            {
+
+                <tr>
+                    <td>@Organization.Id</td>
+                    <td>@Organization.Name</td>
+                    <td>@Organization.Desc</td>
+                    <td><a class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;مشاهده سوابق</a>&nbsp;<a class="btn btn-warning"><i class="fa fa-edit" aria-hidden="true"></i>&nbsp;ویرایش</a>&nbsp;<a class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i>&nbsp;حذف</a></td>
+                </tr>
+
+            }
+
+        }
+
+        </tbody>
+    </table>
+
+</div>
+

@@ -1,0 +1,193 @@
+﻿@font-face {
+  font-family: 'Yekan';
+  src: url('../fonts/Yekan.eot?#') format('eot'),  
+       url('../fonts/Yekan.woff') format('woff'),
+       url('../fonts/Yekan.ttf') format('truetype');
+  font-style:normal;
+  font-weight:normal;
+}
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../../assets/fonts/IranYekan/eot/iranyekanwebbold.eot');
+	src: url('../../assets/fonts/IranYekan/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../assets/fonts/IranYekan/woff2/iranyekanwebbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../../assets/fonts/IranYekan/woff/iranyekanwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../assets/fonts/IranYekan/ttf/iranyekanwebbold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../../assets/fonts/IranYekan/eot/iranyekanweblight.eot');
+	src: url('../../assets/fonts/IranYekan/eot/iranyekanweblight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../assets/fonts/IranYekan/woff2/iranyekanweblight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../../assets/fonts/IranYekan/woff/iranyekanweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../assets/fonts/IranYekan/ttf/iranyekanweblight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../../assets/fonts/IranYekan/eot/iranyekanwebregular.eot');
+	src: url('../../assets/fonts/IranYekan/eot/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../assets/fonts/IranYekan/woff2/iranyekanwebregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../../assets/fonts/IranYekan/woff/iranyekanwebregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../assets/fonts/IranYekan/ttf/iranyekanwebregular.ttf') format('truetype');
+}
+/*End iran yekan*/
+
+
+body {
+    font-family: 'iranyekan';
+     overflow-x: hidden;
+}
+.Hader-Wrapper {
+    background-color: #2FBBE8;
+    height: 50px;
+   
+}
+.Brand img {
+    height: 50px;
+    margin-right: 15px;
+}
+.alertbadge {
+    right: 1px;
+    position: absolute;
+    top: 7px;
+}
+.navbar {
+    margin-bottom: 0px !important;
+}
+/*Sidebar menu*/
+/* Toggle Styles */
+
+#wrapper {
+    padding-right: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-right: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    width: 0;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #00a3d8;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-left: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 10px;
+    line-height: 40px;
+     border-bottom: 1px dotted #fff;
+}
+.sidebar-nav li :last-child {
+    border-bottom: none;
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+     font-size: 23px;
+    height: 73px;
+    line-height: 60px;
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #FFF;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: red;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-right: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-right: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-left: 0;
+    }
+    .submenu  {
+        list-style: outside none none;
+    }
+}
+
