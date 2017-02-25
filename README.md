@@ -1,2 +1,2 @@
-# N-Tire
+# N-Tier
 N-Tire Project Using Web Service
